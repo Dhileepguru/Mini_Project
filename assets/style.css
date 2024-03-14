@@ -1,7 +1,7 @@
 *{
    
     
-    color:lightblue;
+    color:black;
     font-family:Andalé Mono ,monospace;
    
 }
@@ -23,24 +23,24 @@ header{
 }
 .con input{
     position: absolute;
-    background-color: whitesmoke;
+    background-color:black;
     border-radius: 30px;
     padding: 15px;
     width: auto;
     margin-left:800px;
     margin-top:-422px;
-    color: black;
+    color: white;
     font-family: cursive;
     border-color: aliceblue;
     font-size: large;
 
 }
 .out textarea{
-    background-color: whitesmoke;
+    background-color: black;
     border-radius: 10px;
     padding: 15px;
     font-family: 'Times New Roman', Times, serif;
-    color: green;
+    color: whitesmoke;
     font-size: xx-large;
     margin-left: 800px;
     margin-top: -290px;
