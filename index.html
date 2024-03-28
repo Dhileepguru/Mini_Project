@@ -5,86 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Main_page</title>
     <link rel="stylesheet" href="/assets/style.css">
-    <style>
-        video {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            z-index: -1;
-        }
-
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: 'Andalé Mono', monospace;
-            color: lightblue;
-            background-color: black;
-        }
-
-        header {
-            border-bottom: 2px solid whitesmoke;
-            padding-bottom: 10px;
-            margin-top: 30px;
-        }
-
-        .navbar {
-            margin: 20px;
-        }
-
-        .main_l {
-            margin-top: 50px;
-            position: relative;
-        }
-
-        .main_l img {
-            width: 1000px;
-        }
-
-        .con input {
-            position: absolute;
-            background-color: whitesmoke;
-            border-radius: 30px;
-            padding: 15px;
-            width: auto;
-            margin-left: 800px;
-            margin-top: -422px;
-            color: black;
-            font-family: cursive;
-            border-color: aliceblue;
-            font-size: large;
-        }
-
-        .out textarea {
-            background-color: whitesmoke;
-            border-radius: 10px;
-            padding: 15px;
-            font-family: 'Times New Roman', Times, serif;
-            color: green;
-            font-size: xx-large;
-            margin-left: 800px;
-            margin-top: -290px;
-            position: absolute;
-            width: max-content;
-        }
-
-        .con {
-            flex-grow: 1;
-        }
-
-        .con img {
-            width: 50px;
-            position: absolute;
-            width: auto;
-            margin-left: 1100px;
-            margin-top: -425px;
-        }
-    </style>
 </head>
 <body>
-    <!-- Video Background -->
+    
     <video autoplay muted loop>
         <source src="/assets/images/black_pexus.mp4" type="video/mp4">
         Your browser does not support the video tag.
@@ -93,20 +16,24 @@
     <div>
         <header>
             <div class="navbar">
-                <h1>DDA</h1>
+                <h1>Mini project</h1>
             </div>
         </header>
-
-        <div class="main_l">
-            <img src="/assets/images/AI_hand.png">
+        
+        <main class="mainCon">
+            <img src="/assets/images/AI_hand.png" alt="AI Hand Image">
+            <div class="outcon">
             <div class="con">
-                <input type="text" placeholder="Enter a text...">
-                <img src="/assets/images/mic.png" width="50px">
-            </div>
-            <div class="out">
-                <textarea placeholder="Your text..."></textarea>
+                <textarea  id="textToSpeech" placeholder="Enter a text..."></textarea>
+                <div class="icon">
+                   <button onclick="speak()">
+                    <img src="/assets/images/mic.png" width="50px" alt="Microphone Icon">
+                   </button>
+                </div>
             </div>
         </div>
+        </main>
     </div>
+    <script src="./assets/script.js"></script>
 </body>
 </html>
