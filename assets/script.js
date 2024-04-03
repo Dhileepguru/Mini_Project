@@ -7,3 +7,5 @@ function speak(){
     speech.pitch=1;
     window.speechSynthesis.speak(speech);
 }
+
+

@@ -1,0 +1,11 @@
+*{
+    background-color: black;
+}
+.con{
+    background-color:lightblue;
+    margin-top: 20px;
+    margin-left: 30px;
+    width: 95vw;
+    height: 95vh;
+    border-radius: 20px;
+}
