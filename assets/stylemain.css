@@ -3,6 +3,7 @@
 }
 .con{ 
     display: grid;
+
     grid-template-columns: 1fr 1fr; /* Two columns with equal width */
     gap:5px;     
     margin-top: 20px;
