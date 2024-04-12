@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Language</title>
     <link rel="stylesheet" href="/assets/stylemain.css">
+    
 </head>
 <body>
     <div class="con logo">
@@ -13,6 +14,7 @@
         </div>
         <div class="rightcon">
             <Ul>
+
                 <li>HOME</li>
                 <li>ABOUT US</li>
                 <li>OUR SERVICES</li>
@@ -25,11 +27,15 @@
                     ProTalk helps you speak like a pro! Our smart technology makes it easy to turn written words into spoken ones and back again. Plus, we check your grammar in real-time, so you always sound polished. Whether you're chatting with friends or acing that job interview, ProTalk has you covered. Let's start talking like a pro today!
                 </p>
                 <br>
-                <button>Let's Start</button>
+                <button id="btn">Let's Start</button>
             </div>
-            
-
         </div>
     </div>
+    <script>
+        var button=document.getElementById("btn");
+button.addEventListener("click",function(){
+ window.location.href="index.html";
+});
+    </script>
 </body>
 </html>
