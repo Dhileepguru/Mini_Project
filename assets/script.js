@@ -7,6 +7,6 @@ function speak(){
     speech.pitch=1;
     window.speechSynthesis.speak(speech);
 }
-
+alert("Enter a Text and click on a speaker button")
 
 
