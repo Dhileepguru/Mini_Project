@@ -3,40 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Language</title>
-    <link rel="stylesheet" href="/assets/stylemain.css">
-    
+    <title>Main_page</title>
+    <link rel="stylesheet" href="/assets/style.css">
 </head>
 <body>
-    <div class="con logo">
-        <div class="leftcon">
-            <img src="/assets/images/no back logo.jpg" alt="logo">
-        </div>
-        <div class="rightcon">
-            <Ul>
+    
+    <video autoplay muted loop>
+        <source src="/assets/images/black_pexus.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
 
-                <li>HOME</li>
-                <li>ABOUT US</li>
-                <li>OUR SERVICES</li>
-                <li>CONTACT</li>
-            </Ul>
-            <div class="wel">
-                <h1>Welcome to Pro Talk!</h1>
-                <br>
-                <p>
-                    ProTalk helps you speak like a pro! Our smart technology makes it easy to turn written words into spoken ones and back again. Plus, we check your grammar in real-time, so you always sound polished. Whether you're chatting with friends or acing that job interview, ProTalk has you covered. Let's start talking like a pro today!
-                </p>
-                <br>
-                <button id="btn">Let's Start</button>
+    <div>
+        <header>
+            <div class="navbar">
+                <h1>Pro Talk</h1>
+            </div>
+        </header>
+        
+        <main class="mainCon">
+            <img src="/assets/images/AI_hand.png" alt="AI Hand Image">
+            <div class="outcon">
+            <div class="con">
+                <textarea  id="textToSpeech" placeholder="Enter a text..."></textarea>
+                <div class="icon">
+                   <button onclick="speak()">
+                    <img src="/assets/images/mic.png" width="50px" alt="Microphone Icon">
+                   </button>
+                </div>
             </div>
         </div>
+        </main>
     </div>
-    <script>
-        
-        var button=document.getElementById("btn");
-button.addEventListener("click",function(){
- window.location.href="index.html";
-});
-    </script>
+    <script src="./assets/script.js"></script>
 </body>
 </html>
